@@ -36,9 +36,9 @@
 >
 > 常见的web 服务应用程序： Apache、Nginx、IIS、Node.js
 
-<img src="https://cdn.jsdelivr.net/gh/dyx990803/my-images@main/notes/server.jpeg" style="zoom:75%;" />
+<img src="https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/server.jpeg" style="zoom:75%;" />
 
-![Alt text](https://cdn.jsdelivr.net/gh/dyx990803/my-images@main/notes/server-list.jpeg)
+![Alt text](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/server-list.jpeg)
 
 ### （二）网站请求流程（简化版）
 
@@ -56,9 +56,9 @@
 
 前后端分离的页面请求分为两部分： 静态页面请求 + ajax 数据请求
 
-<img src="https://cdn.jsdelivr.net/gh/dyx990803/my-images@main/notes/网站运行机制-静态网页请求.png" style="zoom:50%;" />
+<img src="https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/网站运行机制-静态网页请求.png" style="zoom:50%;" />
 
-<img src="https://cdn.jsdelivr.net/gh/dyx990803/my-images@main/notes/网站运行机制-接口请求.png" style="zoom:50%;" />
+<img src="https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/网站运行机制-接口请求.png" style="zoom:50%;" />
 
 
 
@@ -68,7 +68,7 @@
 
 前后端不分离的页面一次请求就能完成。
 
-<img src="https://cdn.jsdelivr.net/gh/dyx990803/my-images@main/notes/网站运行机制-动态网页.png" style="zoom:50%;" />
+<img src="https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/网站运行机制-动态网页.png" style="zoom:50%;" />
 
 
 
@@ -249,7 +249,7 @@ nohup npm start &
 ##### 1. 安装 MongoDB数据库
 
 * 在官网获取下载链接(注意要选择与服务器匹配的)：https://www.mongodb.com/try/download/community
-![Alt text](https://cdn.jsdelivr.net/gh/dyx990803/my-images@main/notes/mongodb.png)
+![Alt text](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/mongodb.png)
 
 * 下载:
 ```wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel80-4.4.8.tgz```
@@ -286,8 +286,8 @@ auth = true
     db.createUser({user:"root",pwd:"123456",roles:[{role:"userAdminAnyDatabase",db: "admin"}]})
     ```
         > 注：db 可以查看当前所使用的数据库
-    ![Alt text](https://cdn.jsdelivr.net/gh/dyx990803/my-images@main/notes/2021-08-12-013119.png)
-    ![Alt text](https://cdn.jsdelivr.net/gh/dyx990803/my-images@main/notes/2021-08-12-013151.png)
+    ![Alt text](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/2021-08-12-013119.png)
+    ![Alt text](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/2021-08-12-013151.png)
   - 接下来在其他数据库上面创建用户，但是`一定要注意先在 *admin* 数据库上面使用刚才的超级管理员登录，`再进行其他数据库用户创建的创建。对应代码如下： 
     ```js
     use amdin
@@ -298,12 +298,12 @@ auth = true
     use 数据库名
     db.createUser({user:"用户名",pwd:"密码",roles:[{role:"read",db: "数据库名"},{role:"readWrite",db:"数据库名"}]})
     ```
-    ![Alt text](https://cdn.jsdelivr.net/gh/dyx990803/my-images@main/notes/2021-08-12-013226.png)
+    ![Alt text](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/2021-08-12-013226.png)
   - 最后执行
     ```js
     db.auth("用户名","密码")
     ```
-    ![Alt text](https://cdn.jsdelivr.net/gh/dyx990803/my-images@main/notes/2021-08-12-013307.png)
+    ![Alt text](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/2021-08-12-013307.png)
   - 返回 *1*，说明登录成功。至此，我们就在数据库上面添加了一个用户，并且设置了账号和密码。
   - 修改 *mongodb* 的配置文件：
     ```shell

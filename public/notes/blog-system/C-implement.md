@@ -56,7 +56,7 @@ computed: {
 ### （六）其他组件
 ImageLoader组件，该组件可以实现一个渐进式图片，主要用于主页的多功能轮播图。该组件的整体逻辑：两张图片重合，一张是原图（较大且清晰），一张是占位图（较小且模糊），原图加载完成前透明度为0，加载完成后一段时间透明度为1，即可呈现一种渐进式效果。ToTop组件：回到顶部按钮。
 
-![Alt text](https://cdn.jsdelivr.net/gh/dyx990803/my-images@main/notes/top组件.png "Top组件")
+![Alt text](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/top组件.png "Top组件")
 
 ## 三、功能的实现
 暂无
