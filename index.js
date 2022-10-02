@@ -46,6 +46,15 @@ new Docute({
         { title: "项目部署", link: "/blog-system/deploy" },
       ],
     },
+    {
+      title: "JAVA学习",
+      children: [
+        {
+          title: "第一次作业",
+          link: "/java-learn/hw1",
+        }
+      ],
+    },
   ],
   footer: `
   <a
