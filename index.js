@@ -14,7 +14,7 @@ new Docute({
     },
     {
       title: "Github",
-      link: "https://github.com/geekevan",
+      link: "https://github.com/d-yx",
     },
   ],
   //
@@ -47,10 +47,12 @@ new Docute({
       ],
     },
   ],
-  // footer: ` © 2020 - 2021 -
-  // <a
-  //     target="_blank"
-  //     href="https://beian.miit.gov.cn"
-  //     style="color: inherit"
-  // ></a>`,
+  footer: `
+  <a
+      target="_blank"
+      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      style="color: inherit"
+  >
+  CC BY-NC-SA 4.0
+  </a>2020-PRESENT © Deng Yuxi`,
 });
