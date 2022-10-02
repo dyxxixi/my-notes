@@ -2,7 +2,7 @@
 
 new Docute({
   target: "#docute",
-  title: "项目笔记",
+  title: "Notes",
   highlight: ["typescript", "bash", "json", "markdown"],
   detectSystemDarkTheme: true,
   darkThemeToggler: true,
