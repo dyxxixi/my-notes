@@ -3,10 +3,12 @@
 new Docute({
   target: "#docute",
   title: "Notes",
-  highlight: ["typescript", "bash", "json", "markdown"],
+  highlight: ["typescript", "bash", "json", "markdown", "java", "js"],
   detectSystemDarkTheme: true,
   darkThemeToggler: true,
   sourcePath: "./notes/",
+  cssVariables: { sidebarWidth: "200px" },
+  // router: { mode: 'history' },
   nav: [
     {
       title: "Home",
