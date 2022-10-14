@@ -2,10 +2,10 @@
 > [在线阅读](https://notes.dengyuxi.me/#/java-learn/hw1)
 
 ## 一、算数运算符
-### 0．需求：
+### 0．需求
 用户输入两个四位数，将这两个数拆分为个十百千位，求这八位数的总和。
 
-### 1.实现输入：
+### 1.实现输入
 使用Scanner
 
 ```java
@@ -17,7 +17,7 @@
 ```
 
 
-### 2.实现整数的拆分求和方法：
+### 2.实现整数的拆分求和方法
 主要利用数字的取余取模操作实现拆分，该方法适用于任意长度的正整数。
 
 ```java
@@ -34,7 +34,7 @@
     }
 ```
 
-### 3.完整代码：
+### 3.完整代码
 ```java
 package com.cque.dengyuxi.homework;
 
@@ -66,12 +66,12 @@ public class Main {
 
 ```
 
-### 4.效果图：
+### 4.效果图
 ![alt](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/java-learn-hw1-4.webp)
 
 
 ## 二、拼接运算符
-### 0．需求：
+### 0．需求
 用户输⼊自己的姓名、年龄、性别、地址、邮箱，拼接成如下字符串：我的名字是张三，今年22岁，性别为男，住在重庆工商大学江北校区，我的联系方式是：952271030@qq.com。
 
 ### 1.实现输入
@@ -205,7 +205,7 @@ public class Main {
 
 ```
 
-### 4.效果图：
+### 4.效果图
 ![alt](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/java-learn-hw1-6.webp)
 
 ![alt](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/java-learn-hw1-7.webp)
