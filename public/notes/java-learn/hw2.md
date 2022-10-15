@@ -12,7 +12,7 @@
 
 ### 2.完整代码
 ```java
-package com.cque.dengyuxi.notes;
+package com.cque.dengyuxi.homework;
 
 public class Main {
     public static void main(String[] args) {
@@ -51,7 +51,7 @@ public class Main {
 
 ### 2.完整代码
 ```java
-package com.cque.dengyuxi.notes;
+package com.cque.dengyuxi.homework;
 
 import java.security.SecureRandom;
 import java.util.Random;
@@ -63,11 +63,8 @@ public class Main {
 
     public static String generateRandomCode(int n) {
         String RANDOM_CODE = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
         Random RANDOM = new SecureRandom();
-
         char[] code = new char[n];
-
         for (int index = 0; index < code.length; index++) {
             code[index] = RANDOM_CODE.charAt(RANDOM.nextInt(RANDOM_CODE.length()));
         }
@@ -80,9 +77,55 @@ public class Main {
 ![alt](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/java-learn-hw-3.webp)
 
 
-## 三、数字加密（一）
+## 三、数字加密
 ### 0.需求
-某系统的数字密码：比如1983，采用加密方式进行传输，规则如下：先得到每位数，然后每位数都加上5，再对10求余，最后将所有数字反转，得到一串新数。
+加密：某系统的数字密码：比如1983，采用加密方式进行传输，规则如下：先得到每位数，然后每位数都加上5，再对10求余，最后将所有数字反转，得到一串新数。
 
+解密：将上述方法加密后的数字进行解密。
 
-## 四、数字加密（二）
+### 1.分析
+- 考虑到有0开头的密码，决定密码类型为String
+- 循环遍历密码字符串，将每一位转为数字再进行相应规则运算
+- 拼接到一个新的字符串中，然后反转操作并返回
+- 解密操作类似加密，与加密不同的是规则运算，减去运算时要考虑负数的情况
+
+### 2.完整代码
+```java
+package com.cque.dengyuxi.homework;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入系统密码：");
+        String inputPwd = scanner.next();
+        System.out.println("加密后的系统密码：" + getEncryptPwd(inputPwd));
+        System.out.println("解密后的系统密码：" + getDecryptPwd(getEncryptPwd(inputPwd)));
+    }
+
+    //  加密
+    public static String getEncryptPwd(String str) {
+        String newStr = "";
+        for (int i = 0; i < str.length(); i++) {
+            int n = str.charAt(i) - '0';
+            newStr += (n + 5) % 10;
+        }
+        return new StringBuffer(newStr).reverse().toString();
+    }
+
+    //  解密
+    public static String getDecryptPwd(String str) {
+        String newStr = "";
+        for (int i = 0; i < str.length(); i++) {
+            int n = str.charAt(i) - '0';
+            newStr += ((n + 10) - 5) % 10;
+        }
+        return new StringBuffer(newStr).reverse().toString();
+    }
+}
+
+```
+
+### 3.效果图
+![alt](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/java-learn-hw2-4.webp)
