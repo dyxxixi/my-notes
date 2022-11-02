@@ -132,19 +132,41 @@ public class Admin {
         this.userPwd = userPwd;
     }
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getUserPwd() {
+        return userPwd;
+    }
+
+    public void setUserPwd(String userPwd) {
+        this.userPwd = userPwd;
+    }
+
     public Goods[] sortGoods(Shelf shelf) {
         Goods[] lists = shelf.getGoodsList();
         for (int i = 0; i < lists.length - 1; i++) {
             for (int j = i + 1; j < lists.length; j++) {
-              if(lists[j].getPrice()>lists[i].getPrice()){
-                  Goods temp;
-                  temp=lists[j];
-                  lists[j]=lists[i];
-                  lists[i]=temp;
-              }
+                if (lists[j].getPrice() > lists[i].getPrice()) {
+                    Goods temp;
+                    temp = lists[j];
+                    lists[j] = lists[i];
+                    lists[i] = temp;
+                }
             }
         }
         return lists;
+    }
+
+    @Override
+    public String toString() {
+        return "userName:'" + userName + '\'' +
+                ", userPwd:'" + userPwd + '\'';
     }
 }
 ```
