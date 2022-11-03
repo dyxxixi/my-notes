@@ -259,7 +259,7 @@ public class TestMain {
 }
 ```
 
-3.效果图
+### 3.效果图
 ![alt](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/java-learn-hw3-3.webp)
 ![alt](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/java-learn-hw3-4.webp)
 ![alt](https://cdn.staticaly.com/gh/d-yx/my-images@main/notes/java-learn-hw3-5.webp)
