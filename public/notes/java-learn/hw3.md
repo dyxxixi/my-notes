@@ -139,10 +139,10 @@ public class TestMain {
 - 要求使用Collection集合存储自定义的对象，并用迭代器、foreach循环遍历集合。
 
 ### 1.分析
-弄清楚各个功能之间的逻辑后编写,商品类使用了lombok库
+弄清楚各个功能之间的逻辑后编写,商品类使用了lombok库。
 
 ### 2.完整代码
-SMS类
+SMS类:
 ```java
 package com.cqcet.dengyuxi.homework;
 
@@ -218,7 +218,7 @@ public class SMS {
 }
 ```
 
-商品类
+商品类:
 ```java
 package com.cqcet.dengyuxi.homework;
 
@@ -247,7 +247,7 @@ public class Goods {
 }
 ```
 
-测试类
+测试类:
 ```java
 package com.cqcet.dengyuxi.homework;
 
