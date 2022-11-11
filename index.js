@@ -65,6 +65,15 @@ new Docute({
         }
       ],
     },
+    {
+      title: "Python学习",
+      children: [
+        {
+          title: "库的安装",
+          link: "/python-learn/package-install",
+        },
+      ],
+    },
   ],
   footer: `
   <a
