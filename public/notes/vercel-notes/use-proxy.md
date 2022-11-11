@@ -4,7 +4,7 @@
 项目中用了代理处理跨域问题，部署到vercel上404
 
 ## 解决
-1.vercel.json中配置
+### 1.vercel.json中配置
 ```json
 {
   "rewrites": [
@@ -16,12 +16,12 @@
 }
 ```
 
-2.安装http-proxy-middleware
+### 2.安装http-proxy-middleware
 ```
 pnpm i createProxyMiddleware
 ```
 
-3.在项目根目录新建api文件夹，在文件夹中新建proxy.js
+### 3.在项目根目录新建api文件夹，在文件夹中新建proxy.js
 ```js
 // 该服务为 vercel serve跨域处理
 const { createProxyMiddleware } = require('http-proxy-middleware')
