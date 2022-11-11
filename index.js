@@ -69,8 +69,8 @@ new Docute({
       title: "Python学习",
       children: [
         {
-          title: "库的安装",
-          link: "/python-learn/package-install",
+          title: "依赖汇总",
+          link: "/python-learn/dependencies-collect",
         },
       ],
     },
