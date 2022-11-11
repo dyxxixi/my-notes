@@ -74,6 +74,15 @@ new Docute({
         },
       ],
     },
+    {
+      title: "Vercel笔记",
+      children: [
+        {
+          title: "使用代理",
+          link: "/vercel-notes/use-proxy",
+        },
+      ],
+    },
   ],
   footer: `
   <a
