@@ -18,7 +18,7 @@
 
 ### 2.安装http-proxy-middleware
 ```
-pnpm i createProxyMiddleware
+pnpm i http-proxy-middleware
 ```
 
 ### 3.在项目根目录新建api文件夹，在文件夹中新建proxy.js
