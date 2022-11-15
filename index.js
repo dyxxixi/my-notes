@@ -62,6 +62,10 @@ new Docute({
         {
           title: "第三次作业",
           link: "/java-learn/hw3",
+        },
+        {
+          title: "第四次作业",
+          link: "/java-learn/hw4",
         }
       ],
     },
