@@ -3,13 +3,13 @@
 
 ## 一、创建学生表
 ### 0.需求
-添加数据库，并创建表t_student
+添加数据库，并创建表t_student。
 
 ### 1.分析
 使用Navicat Premium软件连接MySQL数据库，创建数据库和学生表，或者用cmd控制台使用sql语句创建，这里使用的是前者。
 
 ### 2.sql语句
-```sql
+```bash
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
