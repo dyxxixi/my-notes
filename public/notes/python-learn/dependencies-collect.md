@@ -11,16 +11,16 @@ pandas==1.1.0
 
 ## 使用
 ### 1.安装pipreqs
-`
+```bash
 pip install pipreqs
-`
+```
 ### 2.生成requirements.txt
 在项目目录下运行：
-`
+```bash
 pipreqs --force ./ --encoding=utf-8
-`
+```
 ### 3.安装项目所需依赖
 将requirements.txt放入项目目录中，运行：
-`
+```bash
 pip install -r requirements.txt
-`
+```

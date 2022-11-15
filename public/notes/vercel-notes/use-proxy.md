@@ -17,7 +17,7 @@
 ```
 
 ### 2.安装http-proxy-middleware
-```
+```bash
 pnpm i http-proxy-middleware
 ```
 
