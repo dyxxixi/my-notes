@@ -7,7 +7,7 @@ new Docute({
   detectSystemDarkTheme: true,
   darkThemeToggler: true,
   sourcePath: "./notes/",
-  cssVariables: { sidebarWidth: "200px" },
+  cssVariables: { sidebarWidth: "230px" },
   // router: { mode: 'history' },
   nav: [
     {
