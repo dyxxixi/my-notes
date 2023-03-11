@@ -16,7 +16,7 @@ new Docute({
     },
     {
       title: "Github",
-      link: "https://github.com/d-yx",
+      link: "https://github.com/d-yx/my-notes",
     },
   ],
   //
