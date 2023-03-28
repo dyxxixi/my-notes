@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Notes</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css" />
-    <style>
-      /* Import desired font from Google fonts */
-      /* @import url("https://fonts.googleapis.com/css?family=Lato"); */
 
-      /* Apply the font to body (to override the default one) */
-      /* body {
-        font-family: "楷体", sans-serif;
-      } */
-    </style>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Notes</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css" />
+</head>
 
-  <body>
-    <div id="docute"></div>
-    <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
-    <script type="module" src="./index.js"></script>
-  </body>
+<body>
+  <div id="docute"></div>
+  <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+  <script type="module" src="./index.js"></script>
+  <script>
+    const style = document.createElement("style");
+    style.innerHTML = `
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        /* 滚动槽 */
+        ::-webkit-scrollbar-track {
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.06);
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.08);
+        }
+        /* 滚动块 */
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.15);
+        }`;
+    document.head.appendChild(style);
+  </script>
+</body>
+
 </html>
