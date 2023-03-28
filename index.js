@@ -190,5 +190,5 @@ new Docute({
       style="color: inherit"
   >
   CC BY-NC-SA 4.0
-  </a>2020-PRESENT © Deng Yuxi`,
+  </a>2020-PRESENT © Joseph`,
 });
