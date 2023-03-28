@@ -174,11 +174,20 @@ new Docute({
       ],
     },
     {
-      title: "Vercel笔记",
+      title: "Vercel's笔记",
       children: [
         {
           title: "使用代理",
           link: "/vercel-notes/use-proxy",
+        },
+      ],
+    },
+    {
+      title: "TS学习",
+      children: [
+        {
+          title: "枚举的位运算",
+          link: "/ts-learn/bit-operation",
         },
       ],
     },
