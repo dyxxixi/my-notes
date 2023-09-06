@@ -191,6 +191,19 @@ new Docute({
         },
       ],
     },
+    {
+      title: "JS小技巧",
+      children: [
+        {
+          title: "壹",
+          link: "/js-tips/01.md",
+        },
+        {
+          title: "贰",
+          link: "/js-tips/02.md",
+        },
+      ],
+    },
   ],
   footer: `
   <a
