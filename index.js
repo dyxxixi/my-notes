@@ -204,6 +204,15 @@ new Docute({
         },
       ],
     },
+    {
+      title: "React学习",
+      children: [
+        {
+          title: "React基本介绍",
+          link: "/react-learn/1-1.md",
+        },
+      ],
+    },
   ],
   footer: `
   <a
