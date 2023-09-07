@@ -211,8 +211,17 @@ new Docute({
           title: "React基本介绍",
           link: "/react-learn/1-1.md",
         },
+        {
+          title: "JSX基础语法",
+          link: "/react-learn/1-2.md",
+        },
+        {
+          title: "组件与事件绑定",
+          link: "/react-learn/1-3.md",
+        },
       ],
     },
+
   ],
   footer: `
   <a
