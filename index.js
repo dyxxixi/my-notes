@@ -3,7 +3,7 @@
 new Docute({
   target: "#docute",
   title: "Notes",
-  highlight: ["typescript", "bash", "json", "markdown", "java", "js"],
+  highlight: ["typescript", "bash", "json", "markdown", "js", "python"],
   detectSystemDarkTheme: true,
   darkThemeToggler: true,
   sourcePath: "./notes/",
@@ -23,6 +23,23 @@ new Docute({
   //各笔记路径设置
   //
   sidebar: [
+    {
+      title: "React学习",
+      children: [
+        {
+          title: "React基本介绍",
+          link: "/react-learn/1-1.md",
+        },
+        {
+          title: "JSX基础语法",
+          link: "/react-learn/1-2.md",
+        },
+        {
+          title: "组件与事件绑定",
+          link: "/react-learn/1-3.md",
+        },
+      ],
+    },
     {
       title: "JS面试",
       children: [
@@ -119,49 +136,12 @@ new Docute({
       ],
     },
     {
-      title: "个人博客系统",
+      title: "TS学习",
       children: [
         {
-          title: "介绍",
-          link: "/blog-system/introduction",
+          title: "枚举的位运算",
+          link: "/ts-learn/bit-operation",
         },
-        {
-          title: "前台设计",
-          link: "/blog-system/C-design",
-        },
-        {
-          title: "后台设计",
-          link: "/blog-system/B-design",
-        },
-        {
-          title: "后端设计",
-          link: "/blog-system/S-design",
-        },
-        { title: "前台实现", link: "/blog-system/C-implement" },
-        { title: "后台实现", link: "/blog-system/B-implement" },
-        { title: "后端实现", link: "/blog-system/S-implement" },
-        { title: "项目部署", link: "/blog-system/deploy" },
-      ],
-    },
-    {
-      title: "JAVA学习",
-      children: [
-        {
-          title: "第一次作业",
-          link: "/java-learn/hw1",
-        },
-        {
-          title: "第二次作业",
-          link: "/java-learn/hw2",
-        },
-        {
-          title: "第三次作业",
-          link: "/java-learn/hw3",
-        },
-        {
-          title: "第四次作业",
-          link: "/java-learn/hw4",
-        }
       ],
     },
     {
@@ -183,15 +163,6 @@ new Docute({
       ],
     },
     {
-      title: "TS学习",
-      children: [
-        {
-          title: "枚举的位运算",
-          link: "/ts-learn/bit-operation",
-        },
-      ],
-    },
-    {
       title: "JS小技巧",
       children: [
         {
@@ -205,23 +176,15 @@ new Docute({
       ],
     },
     {
-      title: "React学习",
-      children: [
-        {
-          title: "React基本介绍",
-          link: "/react-learn/1-1.md",
-        },
-        {
-          title: "JSX基础语法",
-          link: "/react-learn/1-2.md",
-        },
-        {
-          title: "组件与事件绑定",
-          link: "/react-learn/1-3.md",
-        },
-      ],
+      title: "项目部署",
+      children: [{
+        title: "网站运行机制",
+        link: "/project-deployment/01",
+      }, {
+        title: "网站上线部署流程",
+        link: "/project-deployment/02",
+      }]
     },
-
   ],
   footer: `
   <a
