@@ -38,6 +38,18 @@ new Docute({
           title: "组件与事件绑定",
           link: "/react-learn/1-3.md",
         },
+        {
+          title: "组件状态与数据传递",
+          link: "/react-learn/1-4.md",
+        },
+        {
+          title: "表单",
+          link: "/react-learn/1-5.md",
+        },
+        {
+          title: "常用Hooks",
+          link: "/react-learn/1-7.md",
+        },
       ],
     },
     {
