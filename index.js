@@ -50,6 +50,18 @@ new Docute({
           title: "常用Hooks",
           link: "/react-learn/1-7.md",
         },
+        {
+          title: "React-router介绍",
+          link: "/react-learn/2-1.md",
+        },
+        {
+          title: "StuSys项目笔记",
+          link: "/react-learn/2-2.md",
+        },
+        {
+          title:"react-redux",
+          link: "/react-learn/2-3.md",
+        }
       ],
     },
     {
