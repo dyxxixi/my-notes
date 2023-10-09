@@ -59,8 +59,16 @@ new Docute({
           link: "/react-learn/2-2.md",
         },
         {
-          title:"react-redux",
+          title: "react-redux",
           link: "/react-learn/2-3.md",
+        },
+        {
+          title: "Antd介绍",
+          link: "/react-learn/3-1.md",
+        },
+        {
+          title: "CoderStation前台系统笔记",
+          link: "/react-learn/3-2.md"
         }
       ],
     },
