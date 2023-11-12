@@ -69,6 +69,22 @@ new Docute({
         {
           title: "CoderStation前台系统笔记",
           link: "/react-learn/3-2.md"
+        },
+        {
+          title: "Antd Pro介绍",
+          link: "/react-learn/4-1.md"
+        },
+        {
+          title: "Dva介绍",
+          link: "/react-learn/4-2.md"
+        },
+        {
+          title: "Umi.js介绍",
+          link: "/react-learn/4-3.md"
+        },
+        {
+          title: "CoderStation后台管理系统笔记",
+          link: '/react-learn/4-4.md'
         }
       ],
     },
